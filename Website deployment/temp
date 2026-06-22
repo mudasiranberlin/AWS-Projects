@@ -1,0 +1,22 @@
+Start the Ec2 Instance and then create key pair and and check allow ppermission select group allow incoming and outgoing traffic 
+and then select the no of server 
+
+# 1 way u can use the userfile to make the http server and run your website 
+
+# 2 way i am suing creating the instance and then step by step install first permsion to the root user 
+then after that 
+
+#install the http 
+by yum install the httpd -y
+
+# now installed and after that 
+
+go /etc folder and then /var then /
+
+then cd /www
+
+then cd html 
+
+and then create the new website and oickuo thename her i create the html file 
+
+now service httpd start 
