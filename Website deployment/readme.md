@@ -206,8 +206,9 @@ ls -la /var/www/html
 ---
 
 ## Author
+Mudasir Ahmad
 
-AWS EC2 Website Hosting Tutorial
+AWS EC2 Website Hosting 
 
 
 
