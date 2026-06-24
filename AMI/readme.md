@@ -52,6 +52,13 @@ An AMI consists of three main parts:
 
 ---
 
+## Now install the httpd and also tree
+
+--- bash
+yum install httpd -y
+
+---
+
 ## Creating a Custom AMI
 
 1. Launch and configure an EC2 instance
