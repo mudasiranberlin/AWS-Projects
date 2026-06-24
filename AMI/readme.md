@@ -56,6 +56,7 @@ An AMI consists of three main parts:
 
 --- bash
 yum install httpd -y
+yum install treee -y
 
 ---
 
@@ -77,6 +78,8 @@ yum install httpd -y
 - Backup and recovery of server configurations
 
 ---
+
+## now you will see the apche and tree also installed 
 
 ## Advantages
 
