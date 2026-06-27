@@ -22,6 +22,7 @@ This project introduces the core features of Amazon RDS, including database crea
 * Amazon RDS
 * MySQL / PostgreSQL
 * AWS CloudWatch
+* Docker
 * MySQL Workbench / pgAdmin
 
 ## 📂 Project Structure
@@ -36,11 +37,23 @@ AWS-RDS-Practical-Guide/
 
 ## ▶️ Getting Started
 
-1. Create an Amazon RDS database.
-2. Configure Security Groups and networking.
-3. Connect using your preferred database client.
-4. Run SQL queries to create and manage data.
-5. Monitor performance and explore backup options.
+1. Launch an EC2 instance.
+2. Create an Amazon RDS database.
+3. Configure Security Groups and networking.
+4. Connect the application to the RDS database.
+5. Run the Docker container.
+
+### Docker Setup on Amazon Linux
+
+```bash
+sudo yum install docker -y
+
+sudo service docker start
+
+sudo usermod -aG docker ec2-user
+
+sudo docker pull philippaul/node-mysql-app:02
+```
 
 ## 🔒 Best Practices
 
@@ -49,9 +62,11 @@ AWS-RDS-Practical-Guide/
 * Use strong credentials and encryption.
 * Monitor database performance regularly.
 
+## 👨‍💻 Author
+
+**Mudasir Ahmad**
+GitHub: **@anberlin**
+
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-
-Author: Mudasir Ahmad  // @ anberlin
