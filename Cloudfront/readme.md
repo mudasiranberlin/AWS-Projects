@@ -79,6 +79,12 @@ CloudFront will display a bucket policy. Copy this policy.
 - Save the bucket policy.
 - Return to CloudFront and save the origin changes.
 
+### 9. Now you can copy the Distribution domain name and open in the browser
+
 ## Result
 
 Once the distribution finishes deploying, access your website using the CloudFront distribution domain. Your website is now securely delivered through Amazon CloudFront with Origin Access Control enabled.
+
+Author 
+
+Mudasir Ahmad /@Anberlin
