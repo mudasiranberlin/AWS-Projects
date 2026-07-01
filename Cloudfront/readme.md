@@ -80,6 +80,8 @@ CloudFront will display a bucket policy. Copy this policy.
 - Return to CloudFront and save the origin changes.
 
 ### 9. Now you can copy the Distribution domain name and open in the browser
+- you can open the domain on different locations and you will see you will first time it will take time to load and then after that it will show fast.
+- so we can see cloudfront can be used to load our website faster by storing website files in the network service provider
 
 ## Result
 
