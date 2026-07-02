@@ -311,22 +311,24 @@ https://cidr.xyz/
 - AWS VPC Documentation
 - AWS Networking Best Practices
 - https://docs.aws.amazon.com/vpc/
+- You can see the screenshots as well for reference.
 
 ---
 
 ## 📄 License
 
 This project is intended for learning and demonstration purposes.
+Mudasir Ahmad // @anberlin
 
-Steps: 
+# Steps: 
 GO to the vpc 
-click on create new vpc 
+# click on create new vpc 
 VPC settings = vpc only 
 Name tag - my-vpc (you can give your name )
 IPv4 CIDR   -- 10.0.0.0/16 (you can choose your requirmnet )
 click on create vpc 
 check the resouce map nothing is connected 
-Now lets create subnets 
+# Now lets create subnets 
 select your VPC i will select mine
 Subnet 1 of 1 
 Subnet name Public-subnet  (you can give your name )
@@ -342,7 +344,7 @@ IPv4 subnet CIDR block = 10.0.2.0/24   (you can choose your requirmnet )
 click on create subnet
 by default it will assign route table
 
-Now lets create route table
+# Now lets create route table
 click on router then create routue table
 Create route table: Name - my-route-table
 select your : VPC
@@ -355,7 +357,7 @@ Internet gateway settings
 Name :my-internet-gateway
 click and create internet gateway
 
-now after that go to internet gateway click on attach internet gateway or click action to attach 
+# Now after that go to internet gateway click on attach internet gateway or click action to attach 
 select your Available VPCs =name of your vpc
 click attach
 
@@ -366,14 +368,14 @@ Change which subnets are associated with this route table.
 select public-subnet (i want to connect to network)
 click save 
 
-Now go to route table then routes 
+# Now go to route table then routes 
 then click on edit route 
 Add Route2 Destination  0.0.0.0/0  and  select tasrget internet gateway
 save changes 
 Now go to vpc and then id and check Resouce map 
 now u will see routable connect of public internet gateway 
 
-Now we will create the subnet in private subnet 
+# Now we will create the subnet in private subnet 
 name server and then go to network setting and select your private subnet for your data 
 
 
