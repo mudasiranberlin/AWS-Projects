@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the setup and documentation for managing an AWS Organization. It helps organize multiple AWS accounts under a single management account, making it easier to manage security, billing, and access across all accounts.
+AWS Organization helps organize multiple AWS accounts under a single management account, making it easier to manage security, billing, and access across all accounts.
 
 ---
 
@@ -16,48 +16,8 @@ AWS Organizations is an AWS service that allows you to:
 - Consolidate billing across all accounts
 - Control access using Service Control Policies (SCPs)
 
----
 
-## Project Structure
 
-```
-aws-organization/
-├── README.md
-├── organizational-units/
-├── accounts/
-├── service-control-policies/
-├── iam/
-├── documentation/
-└── terraform/ (optional)
-```
-
----
-
-## Organization Structure
-
-Example:
-
-```
-Management Account
-│
-├── Security OU
-│   ├── Security Account
-│   └── Log Archive Account
-│
-├── Infrastructure OU
-│   ├── Network Account
-│   └── Shared Services Account
-│
-├── Development OU
-│   ├── Dev Account
-│   └── Testing Account
-│
-└── Production OU
-    ├── Production Account
-    └── Backup Account
-```
-
----
 
 ## Features
 
@@ -93,7 +53,6 @@ Management Account
 - AWS Config
 - Amazon CloudWatch
 - AWS Backup
-- AWS Control Tower (optional)
 
 ---
 
