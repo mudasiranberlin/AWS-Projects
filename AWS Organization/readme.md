@@ -2,95 +2,143 @@
 
 ## Overview
 
-AWS Organization helps organize multiple AWS accounts under a single management account, making it easier to manage security, billing, and access across all accounts.
+AWS Organizations helps you organize multiple AWS accounts under a single management account. It makes it easier to manage security, billing, and access across all accounts.
 
 ---
 
-## What is AWS Organization?
+## What is AWS Organizations?
 
 AWS Organizations is an AWS service that allows you to:
 
-- Manage multiple AWS accounts from one place
-- Group accounts into Organizational Units (OUs)
-- Apply security and compliance policies
-- Consolidate billing across all accounts
+- Manage multiple AWS accounts from one place  
+- Group accounts into Organizational Units (OUs)  
+- Apply security and compliance policies  
+- Consolidate billing across all accounts  
 - Control access using Service Control Policies (SCPs)
 
-
-
+---
 
 ## Features
 
-- Centralized AWS account management
-- Consolidated billing
-- Organizational Units (OUs)
-- Service Control Policies (SCPs)
-- IAM Identity Center integration (optional)
-- Security best practices
-- Account isolation
-- Scalable multi-account architecture
+- Centralized AWS account management  
+- Consolidated billing  
+- Organizational Units (OUs)  
+- Service Control Policies (SCPs)  
+- IAM Identity Center integration (optional)  
+- Security best practices enforcement  
+- Account isolation  
+- Scalable multi-account architecture  
 
 ---
 
 ## Best Practices
 
-- Keep the Management Account for administration only.
-- Separate Production and Development accounts.
-- Enable CloudTrail for all accounts.
-- Use SCPs to enforce security policies.
-- Enable AWS Config where required.
-- Use least-privilege IAM permissions.
-- Enable MFA for privileged users.
+- Keep the management account for administrative purposes only  
+- Separate production and development accounts  
+- Enable CloudTrail for all accounts  
+- Use SCPs to enforce security policies  
+- Enable AWS Config where required  
+- Follow least-privilege IAM access  
+- Enable Multi-Factor Authentication (MFA) for privileged users  
 
 ---
 
 ## Common AWS Services Used
 
-- AWS Organizations
-- AWS IAM
-- AWS IAM Identity Center
-- AWS CloudTrail
-- AWS Config
-- Amazon CloudWatch
-- AWS Backup
+- AWS Organizations  
+- AWS IAM  
+- AWS IAM Identity Center  
+- AWS CloudTrail  
+- AWS Config  
+- Amazon CloudWatch  
+- AWS Backup  
 
 ---
 
 ## Benefits
 
-- Better security
-- Easier account management
-- Centralized billing
-- Improved compliance
-- Resource isolation
-- Easier scalability
+- Improved security  
+- Easier account management  
+- Centralized billing  
+- Better compliance control  
+- Resource isolation  
+- Easier scalability  
 
 ---
 
 ## Getting Started
 
-1. Create an AWS Organization.
-2. Create Organizational Units (OUs).
-3. Create or invite AWS accounts.
-4. Apply Service Control Policies (SCPs).
-5. Configure IAM roles and permissions.
-6. Enable logging and monitoring.
-7. Start deploying workloads into the appropriate accounts.
+### 1. Access AWS Organizations
+Go to AWS Organizations in the AWS Management Console.  
+Click on **AWS Accounts** to view existing accounts.
+
+---
+
+### 2. Add a New AWS Account
+
+You can add accounts in two ways:
+
+#### Option 1: Create a new AWS account
+- AWS will create a new account under your organization
+
+#### Option 2: Invite an existing AWS account
+- Enter the email address or AWS Account ID
+- Add an optional message
+- Send the invitation
+
+---
+
+### 3. Accept or Decline Invitation
+
+To check invitations:
+
+- Go to **AWS Organizations**
+- Click on **AWS Accounts**
+- Open the **Invitations** section
+- Choose **Accept** or **Decline**
+
+---
+
+### 4. Apply Policies (SCPs)
+
+You can control permissions using policies:
+
+- Go to **Policies** in AWS Organizations
+- Search or create a policy
+- Write policy in JSON format
+- Attach it to accounts or Organizational Units (OUs)
+
+Example:
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Deny",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
 
 ---
 
 ## Security
 
-- Enable Multi-Factor Authentication (MFA).
-- Use least-privilege access.
-- Regularly review IAM permissions.
-- Enable CloudTrail and AWS Config.
-- Monitor accounts using CloudWatch.
+- Enable Multi-Factor Authentication (MFA)  
+- Use least-privilege access  
+- Regularly review IAM permissions  
+- Enable AWS CloudTrail and AWS Config  
+- Monitor activity using CloudWatch  
 
 ---
 
 ## Contributing
 
-Feel free to submit improvements, documentation updates, or new examples through pull requests.
+Feel free to improve this documentation by submitting a pull request.
 
 ---
+
+## For reference
+See the screenshots as well
