@@ -89,12 +89,6 @@ AWS Organizations is an AWS service that allows you to:
 
 ---
 
-## Documentation
-
-Refer to the `documentation/` folder for detailed setup guides, architecture diagrams, and operational procedures.
-
----
-
 ## Contributing
 
 Feel free to submit improvements, documentation updates, or new examples through pull requests.
