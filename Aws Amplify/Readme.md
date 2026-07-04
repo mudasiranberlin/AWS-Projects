@@ -198,12 +198,19 @@ Users Access the Website
 
 # Simple Workflow
 
+# 1 Way i will using my github account and get my website and deploy and you can see the details in screenshot name will Project 1
+
 1. Create an application.
 2. Connect your GitHub repository.
 3. Amplify builds the project.
 4. Deploy the application.
 5. Users access the hosted website.
-6. Every new Git push automatically updates the website.
+6. Every new Git push automatically updates the website. ci/cd..
+
+
+# 2 Way i will using aws templte for delopyment of Application  Name of Screenshot will be Project 2
+1. 
+
 
 ---
 
