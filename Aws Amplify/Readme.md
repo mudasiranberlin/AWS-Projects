@@ -200,6 +200,9 @@ Users Access the Website
 
 # 1 Way i will using my github account and get my website and deploy and you can see the details in screenshot name will Project 1
 
+1. Search amplify service then
+2. 
+
 1. Create an application.
 2. Connect your GitHub repository.
 3. Amplify builds the project.
