@@ -100,6 +100,14 @@ Download Terraform from the official website:
 
 https://developer.hashicorp.com/terraform/downloads
 
+For mac copy and paste in terminal
+
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+```
+
+
 
 Check Terraform installation:
 
