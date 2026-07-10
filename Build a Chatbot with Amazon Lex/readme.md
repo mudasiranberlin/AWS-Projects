@@ -196,7 +196,7 @@ Amazon Lex triggers **WelcomeIntent**.
 # 💬 Welcome Response
 
 ```
-Hi! I'm BB, the Banking Bot.
+Hi! I'm FD, the Food delivery Bot.
 How can I help you today?
 ```
 
