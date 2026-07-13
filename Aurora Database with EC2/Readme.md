@@ -135,13 +135,6 @@ To avoid AWS charges, delete:
 
 ---
 
-## ✅ Project Outcome
-
-Successfully created an Amazon Aurora database and connected it to an EC2 instance.
-
-This project provides the foundation for building a web application that stores data in a cloud database.
-
----
 
 ## 📚 Skills Gained
 
@@ -158,5 +151,3 @@ This project provides the foundation for building a web application that stores 
 ## 👨‍💻 Author
 
 **Mudasir Ahmad**
-
-GitHub: https://github.com/mudasiranberlin
