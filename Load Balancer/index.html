@@ -1,0 +1,103 @@
+#!/bin/bash
+
+# Update the system
+sudo yum update -y
+
+# Install Apache Web Server
+sudo yum install -y httpd
+
+# Start Apache
+sudo systemctl start httpd
+
+# Enable Apache to start on boot
+sudo systemctl enable httpd
+
+# Create a simple website
+cat <<EOF | sudo tee /var/www/html/index.html > /dev/null
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AWS EC2</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .container{
+            background:rgba(255,255,255,0.1);
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            backdrop-filter:blur(10px);
+            box-shadow:0 10px 25px rgba(0,0,0,.3);
+            width:80%;
+            max-width:700px;
+        }
+
+        h1{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        h2{
+            color:#00ffcc;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:18px;
+            margin:10px 0;
+        }
+
+        .footer{
+            margin-top:30px;
+            font-size:14px;
+            color:#ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Welcome to Amazon EC2</h1>
+
+    <h2>Apache Web Server is Running Successfully!</h2>
+
+    <p><strong>Server Hostname:</strong></p>
+
+    <p style="font-size:24px;color:#FFD700;">
+        $(hostname)
+    </p>
+
+    <p>Your EC2 instance has been configured automatically using User Data.</p>
+
+    <div class="footer">
+        Created using Bash Script • AWS EC2 • Apache HTTP Server
+    </div>
+
+</div>
+
+</body>
+</html>
+EOF
+
+# Restart Apache to ensure changes are loaded
+sudo systemctl restart httpd
